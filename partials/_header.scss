@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+header{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    gap: 1rem;
+
+    a{
+        text-decoration:none;
+    }
+
+    .company-name{
+        font-size: $fs-400;
+    }
+
+    ul{
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+        font-size: $fs-200;
+    }
+}
+
+
