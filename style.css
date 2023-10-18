@@ -52,6 +52,38 @@ header ul {
   font-size: 1.5rem;
 }
 
+.main-banner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-wrapper {
+  margin: 4rem 0;
+  flex-direction: column-reverse;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.main-wrapper .main-intro {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.main-wrapper .main-intro .wrapper {
+  flex-direction: column;
+}
+.main-wrapper .main-intro .wrapper article {
+  flex-direction: column;
+}
+.main-wrapper .main-product-info {
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+.main-wrapper .main-product-info img {
+  max-width: 26rem;
+}
+
 footer {
   flex-direction: column;
   justify-content: space-between;
