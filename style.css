@@ -170,7 +170,7 @@ header .navigation {
   font-size: 1.5rem;
 }
 .main-wrapper .main-product-info img {
-  max-width: 26rem;
+  max-width: 20rem;
 }
 @media (min-width: 40rem) {
   .main-wrapper .main-product-info img {
@@ -226,12 +226,6 @@ footer .copyright {
   font-size: 0.75rem;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .about-us {
   flex-direction: column;
   align-items: center;
@@ -248,10 +242,6 @@ footer .copyright {
 }
 .employee p {
   font-size: 0.6rem;
-}
-
-.container .about-us {
-  flex-direction: column;
 }
 
 .wraps {
@@ -310,6 +300,11 @@ footer .copyright {
   border-style: double;
   transition: opacity 0.5s, opacity 0.5s, box-shadow 0.5s;
 }
+.wraps .contact-cont .contact-box form #skicka:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+}
 
 .product-page-wrapper {
   flex-direction: column;
@@ -347,8 +342,58 @@ footer .copyright {
 .product-page-wrapper .product-grid .product-card .product-info .buy-product {
   font-size: 1.125rem;
 }
-.wraps .contact-cont .contact-box form #skicka:hover {
-  cursor: pointer;
-  opacity: 0.8;
-  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+
+.references-wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 3rem 1rem;
+}
+.references-wrapper h1 {
+  font-size: clamp(1.5rem, 6vw, 1.75rem);
+}
+.references-wrapper .reference-grid {
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+}
+@media (min-width: 40rem) {
+  .references-wrapper .reference-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.references-wrapper .reference-grid .reference {
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+@media (min-width: 40rem) {
+  .references-wrapper .reference-grid .reference {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+.references-wrapper .reference-grid .reference h2 {
+  font-size: 1.5rem;
+}
+.references-wrapper .reference-grid .reference img {
+  aspect-ratio: 1;
+  max-width: 7rem;
+  border-radius: 50%;
+  border: 1px solid;
+}
+@media (min-width: 40rem) {
+  .references-wrapper .reference-grid .reference img {
+    max-width: 5rem;
+  }
+}
+.references-wrapper .reference-grid .reference .wrapper {
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 35ch;
+}
+@media (min-width: 40rem) {
+  .references-wrapper .reference-grid .reference .wrapper {
+    max-width: 30ch;
+  }
 }/*# sourceMappingURL=style.css.map */
