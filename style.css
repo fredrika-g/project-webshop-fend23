@@ -228,10 +228,24 @@ footer .copyright {
   padding: 0;
 }
 
-.container {
+.about-us {
   flex-direction: column;
   align-items: center;
 }
+
+.history {
+  font-size: 0.8rem;
+}
+
+.employee {
+  min-width: 0.6rem;
+  border: 1px solid black;
+  gap: 1rem;
+}
+.employee p {
+  font-size: 0.6rem;
+}
+
 .container .about-us {
   flex-direction: column;
 }
