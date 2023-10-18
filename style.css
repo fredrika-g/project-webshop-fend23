@@ -81,4 +81,17 @@ footer .copyright {
   footer .footer-nav ul {
     flex-direction: row;
   }
+}
+
+.contact-cont {
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.contact-cont .contact-box {
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
+  border: solid black 2px;
 }/*# sourceMappingURL=style.css.map */
