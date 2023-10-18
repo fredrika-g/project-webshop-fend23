@@ -52,11 +52,13 @@ header{
     .navigation{
         background: $clr-primary-100;
         width: 60%;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
 
         @include devices(desktop){
             background: none;
             width: auto;
+            padding: 0;
         }
         
     }
