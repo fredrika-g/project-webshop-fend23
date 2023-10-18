@@ -1,0 +1,9 @@
+//media query
+@mixin devices ($breakpoint) { 
+ 
+  @if $breakpoint == desktop {
+    @media (min-width: 40rem) {
+      @content;
+    }
+  }
+}
