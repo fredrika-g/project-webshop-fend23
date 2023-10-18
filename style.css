@@ -79,6 +79,9 @@ header ul {
   align-items: center;
   gap: 1rem;
 }
+.main-wrapper .main-intro .wrapper .slogan {
+  font-size: 1.75rem;
+}
 .main-wrapper .main-intro .wrapper article {
   flex-direction: column;
   align-items: center;
