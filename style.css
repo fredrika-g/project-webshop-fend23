@@ -81,4 +81,18 @@ footer .copyright {
   footer .footer-nav ul {
     flex-direction: row;
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+.container .about-us {
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
