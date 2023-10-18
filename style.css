@@ -68,6 +68,10 @@ header a {
 }
 header .company-name {
   font-size: clamp(1.5rem, 10vw, 2.25rem);
+  background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header ul {
   flex-direction: column;
@@ -174,12 +178,9 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   background: rgba(186, 186, 186, 0.197);
-=======
   gap: 2rem;
   background-color: hsl(313, 82%, 96%);
-
 }
 footer .wrapper {
   align-items: center;
@@ -212,6 +213,10 @@ footer .footer-nav ul a {
 }
 footer .footer-nav .company-name {
   font-size: 1.5rem;
+  background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 footer .copyright {
   font-size: 0.75rem;
@@ -286,11 +291,9 @@ footer .copyright {
   border-radius: 4px;
   border-style: double;
   transition: opacity 0.5s, opacity 0.5s, box-shadow 0.5s;
-
 }
 .wraps .contact-cont .contact-box form #skicka:hover {
   cursor: pointer;
   opacity: 0.8;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
-
 }/*# sourceMappingURL=style.css.map */
