@@ -115,6 +115,13 @@ footer .copyright {
   }
 }
 
+.container {
+  flex-direction: column;
+  align-items: center;
+}
+.container .about-us {
+  flex-direction: column;
+  =======}
 .contact-cont {
   width: 100%;
   height: 80vh;
@@ -126,4 +133,5 @@ footer .copyright {
   height: 90%;
   border-radius: 1rem;
   border: solid black 2px;
+}
 }/*# sourceMappingURL=style.css.map */
