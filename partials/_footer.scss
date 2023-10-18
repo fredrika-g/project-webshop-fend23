@@ -27,9 +27,11 @@ footer{
             gap: 0.75rem;
             flex-direction: column;
 
+
             @include devices(desktop){
                 flex-direction: row;
             }
+
         }
     }
 
