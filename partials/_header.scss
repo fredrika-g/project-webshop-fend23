@@ -66,6 +66,9 @@ header{
             flex-direction: row;
             font-size: $fs-100;
         }
+        span{
+            text-decoration: underline;
+        }
     }
     .logo{
         margin-top: 1rem;

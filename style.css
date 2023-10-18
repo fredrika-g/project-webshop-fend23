@@ -94,6 +94,9 @@ header ul {
     font-size: 1.125rem;
   }
 }
+header ul span {
+  text-decoration: underline;
+}
 header .logo {
   margin-top: 1rem;
 }
