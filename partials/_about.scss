@@ -1,19 +1,23 @@
 @use "variables" as *;
 
-// reset
-*{
-    box-sizing:border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-.container{
-    flex-direction: column;
-    align-items: center;
-
-    .about-us{
+.about-us{
         flex-direction: column;
-    }
+        align-items: center;
 }
+
+.history{
+    
+    font-size: 0.8rem;
+}
+
+    .employee{
+        min-width: 0.6rem;
+        border: 1px solid black;
+        gap: 1rem;
+        
+        
+    p{
+        font-size: 0.6rem;
+    }
+    }
 

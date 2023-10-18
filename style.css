@@ -70,6 +70,10 @@ header a {
 }
 header .company-name {
   font-size: clamp(1.5rem, 10vw, 2.25rem);
+  background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header ul {
   flex-direction: column;
@@ -178,6 +182,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background: rgba(186, 186, 186, 0.197);
   gap: 2rem;
   background-color: hsl(313, 82%, 96%);
 }
@@ -212,6 +217,10 @@ footer .footer-nav ul a {
 }
 footer .footer-nav .company-name {
   font-size: 1.5rem;
+  background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 footer .copyright {
   font-size: 0.75rem;
@@ -223,21 +232,49 @@ footer .copyright {
   padding: 0;
 }
 
-.container {
+.about-us {
   flex-direction: column;
   align-items: center;
 }
+
+.history {
+  font-size: 0.8rem;
+}
+
+.employee {
+  min-width: 0.6rem;
+  border: 1px solid black;
+  gap: 1rem;
+}
+.employee p {
+  font-size: 0.6rem;
+}
+
 .container .about-us {
   flex-direction: column;
 }
 
-.contact-cont {
+.wraps {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40rem) {
+  .wraps {
+    flex-direction: row;
+  }
+}
+.wraps .contact-cont {
   width: 100%;
   height: 70vh;
   justify-content: center;
   align-items: center;
 }
-.contact-cont .contact-box {
+@media (min-width: 40rem) {
+  .wraps .contact-cont {
+    height: 90vh;
+  }
+}
+.wraps .contact-cont .contact-box {
   width: 90%;
   height: 90%;
   border-radius: 1rem;
@@ -247,11 +284,11 @@ footer .copyright {
   flex-direction: column;
   background: rgba(186, 186, 186, 0.197);
 }
-.contact-cont .contact-box h1 {
+.wraps .contact-cont .contact-box h1 {
   font-size: 1.75rem;
   text-decoration: underline;
 }
-.contact-cont .contact-box form {
+.wraps .contact-cont .contact-box form {
   width: 85%;
   height: 80%;
   display: flex;
@@ -260,10 +297,10 @@ footer .copyright {
   flex-direction: column;
   font-family: "PT Sans", sans-serif;
 }
-.contact-cont .contact-box form #meddelande {
+.wraps .contact-cont .contact-box form #meddelande {
   width: 90%;
 }
-.contact-cont .contact-box form #skicka {
+.wraps .contact-cont .contact-box form #skicka {
   height: 2.5rem;
   width: 51%;
   background: black;
@@ -309,4 +346,9 @@ footer .copyright {
 }
 .product-page-wrapper .product-grid .product-card .product-info .buy-product {
   font-size: 1.125rem;
+}
+.wraps .contact-cont .contact-box form #skicka:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }/*# sourceMappingURL=style.css.map */

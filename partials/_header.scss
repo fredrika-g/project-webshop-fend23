@@ -18,6 +18,20 @@ header{
 
     .company-name{
         font-size: clamp($fs-200, 10vw, $fs-400);
+        background: linear-gradient(
+            to right,
+            #55aef6,
+            #6453fc,
+            #8053fc,
+            #ad53fc,
+            #d873f9,
+            #f9739d,
+            #f973de,
+            
+            
+          );    
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
     }
 
     ul{
