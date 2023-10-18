@@ -5,7 +5,12 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     background: rgba(186, 186, 186, 0.197);
+
+    gap: 2rem;
+    background-color: $clr-primary-100;
+
 
     .wrapper{
         align-items: center;
@@ -23,16 +28,26 @@ footer{
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        text-align: center;
 
         ul{
             gap: 0.75rem;
             flex-direction: column;
+
+            a{
+                text-decoration: none;
+                color: $clr-neutral-900;
+            }
 
 
             @include devices(desktop){
                 flex-direction: row;
             }
 
+        }
+
+        .company-name{
+            font-size: $fs-200;
         }
     }
 
