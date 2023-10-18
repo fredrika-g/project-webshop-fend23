@@ -18,6 +18,7 @@ img{
 body{
     font-family: $font-body;
     line-height: 1.5;
+    min-height: 100vh;
 }
 
 h1,
@@ -58,4 +59,5 @@ ul[class]{
     text-decoration: none;
     padding: .5em 1em;
     color: $clr-neutral-900;
+    cursor: pointer;
 }

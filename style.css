@@ -12,6 +12,7 @@ img {
 body {
   font-family: "PT Sans", sans-serif;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 h1,
@@ -49,6 +50,7 @@ ul[class] {
   text-decoration: none;
   padding: 0.5em 1em;
   color: hsl(0, 0%, 0%);
+  cursor: pointer;
 }
 
 header {
@@ -98,12 +100,14 @@ header .logo {
 header .navigation {
   background: hsl(313, 82%, 96%);
   width: 60%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 @media (min-width: 40rem) {
   header .navigation {
     background: none;
     width: auto;
+    padding: 0;
   }
 }
 
@@ -332,6 +336,43 @@ footer .copyright {
   border-style: double;
   margin-bottom: 1rem;
   transition: opacity 0.5s, opacity 0.5s, box-shadow 0.5s;
+}
+
+.product-page-wrapper {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin-block: 5rem;
+}
+.product-page-wrapper .product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+@media (min-width: 40rem) {
+  .product-page-wrapper .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.product-page-wrapper .product-grid .product-card {
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.product-page-wrapper .product-grid .product-card img {
+  max-width: 15rem;
+}
+.product-page-wrapper .product-grid .product-card .product-info {
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.product-page-wrapper .product-grid .product-card .product-info .product-name {
+  font-size: 1.5rem;
+}
+.product-page-wrapper .product-grid .product-card .product-info .buy-product {
+  font-size: 1.125rem;
 }
 .wraps .contact-cont .contact-box form #skicka:hover {
   cursor: pointer;
