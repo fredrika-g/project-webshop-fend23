@@ -115,16 +115,23 @@ footer .copyright {
   }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   flex-direction: column;
   align-items: center;
 }
 .container .about-us {
   flex-direction: column;
+  =======}
+.contact-cont {
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+.contact-cont .contact-box {
+  width: 90%;
+  height: 90%;
+  border-radius: 1rem;
+  border: solid black 2px;
+}
 }/*# sourceMappingURL=style.css.map */
