@@ -19,9 +19,19 @@ footer{
 
         @include devices(desktop){
             flex-direction: row;
+            margin-top: 1.2rem;
+            
         }
     }
     
+    .logo{
+        @include devices(desktop){
+            
+            
+       
+            margin-left: 6rem;
+        }
+    }
 
 
     .footer-nav{
@@ -29,6 +39,7 @@ footer{
         align-items: center;
         gap: 1rem;
         text-align: center;
+        
 
         p{
             font-size: $fs-200;
@@ -67,6 +78,10 @@ footer{
                         
                         
               }
+              @include devices(desktop){
+                font-size: $fs-400;
+                
+            }
               
         }
 

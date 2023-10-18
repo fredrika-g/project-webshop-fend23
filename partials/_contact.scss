@@ -36,7 +36,7 @@
             height: 20%;
             justify-content: center;
             align-items: center;
-
+            
             h1,h2{
                 font-size: $fs-300;
                 text-decoration: underline;
@@ -47,9 +47,9 @@
             height: 40%;
             font-family: $font-body;
             
-           li{
-            margin-bottom: 1.5rem;
-           }
+            li{
+                margin-bottom: 1.5rem;
+            }
         }
         .img-cont{
             width: 80%;
@@ -59,6 +59,15 @@
                 border-radius: 1rem;
                 object-fit: fill;
                 border: solid 2px black;
+                &:hover{
+                    transition: ease 2s;
+                    scale: 0.7;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+                    
+                }
             }
         }
         form{
