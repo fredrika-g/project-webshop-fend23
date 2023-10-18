@@ -298,11 +298,11 @@ footer .copyright {
   text-decoration: underline;
 }
 .wraps .contact-cont .contact-box ul {
-  height: 50%;
+  height: 40%;
   font-family: "PT Sans", sans-serif;
 }
 .wraps .contact-cont .contact-box ul li {
-  margin: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 .wraps .contact-cont .contact-box .img-cont {
   width: 80%;
