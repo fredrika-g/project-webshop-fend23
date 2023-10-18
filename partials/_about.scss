@@ -1,0 +1,19 @@
+@use "variables" as *;
+
+// reset
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    flex-direction: column;
+    align-items: center;
+
+    .about-us{
+        flex-direction: column;
+    }
+}
+
