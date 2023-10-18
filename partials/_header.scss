@@ -29,10 +29,31 @@ header{
             #f973de,
             
             
-          );    
-          background-clip: text;
-          -webkit-text-fill-color: transparent;
+            
+            );    
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &:hover{
+                background: linear-gradient(
+                    to right,
+                    #f973de,
+                    #f9739d,
+                    #ad53fc,
+                    #d873f9,
+                    #8053fc,
+                    #6453fc,
+                    #55aef6,
+                    
+                    
+                    
+                    );    
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                    
+          }
     }
+    
 
     ul{
         flex-direction:column;
