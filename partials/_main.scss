@@ -1,4 +1,5 @@
 @use "variables" as *;
+@use "mixins" as *;
 
 .main-banner{
     margin-top: 3rem;
@@ -18,6 +19,10 @@
     gap: 2rem;
     padding: 0 2rem;
 
+    @include devices(desktop){
+        flex-direction: column;
+    }
+
 
 
     .main-intro{
@@ -25,11 +30,18 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+
+        
     
        .wrapper{
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 3rem;
+
+
+        @include devices(desktop){
+            flex-direction: row;
+        }
 
             .slogan{
                 font-size: $fs-300;
@@ -53,6 +65,10 @@
         flex-direction: column-reverse;
         align-items: center;
         gap: 2rem;
+
+        @include devices(desktop){
+            flex-direction: row;
+        }
 
         img{
             max-width: 26rem;
