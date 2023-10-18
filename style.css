@@ -73,6 +73,12 @@ header .company-name {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+header .company-name:hover {
+  background: linear-gradient(to right, #f973de, #f9739d, #ad53fc, #d873f9, #8053fc, #6453fc, #55aef6);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 header ul {
   flex-direction: column;
   justify-content: space-around;
@@ -198,6 +204,19 @@ footer .footer-nav {
   gap: 1rem;
   text-align: center;
 }
+footer .footer-nav p {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer .footer-nav p:hover {
+  background: linear-gradient(to right, #f973de, #f9739d, #ad53fc, #d873f9, #8053fc, #6453fc, #55aef6);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 footer .footer-nav ul {
   gap: 0.75rem;
   flex-direction: column;
@@ -211,21 +230,8 @@ footer .footer-nav ul a {
     flex-direction: row;
   }
 }
-footer .footer-nav .company-name {
-  font-size: 1.5rem;
-  background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 footer .copyright {
   font-size: 0.75rem;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .about-us {
@@ -246,10 +252,6 @@ footer .copyright {
   font-size: 0.6rem;
 }
 
-.container .about-us {
-  flex-direction: column;
-}
-
 .wraps {
   display: flex;
   flex-direction: column;
@@ -261,13 +263,13 @@ footer .copyright {
 }
 .wraps .contact-cont {
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 40rem) {
   .wraps .contact-cont {
-    height: 90vh;
+    height: 80vh;
   }
 }
 .wraps .contact-cont .contact-box {
@@ -278,11 +280,35 @@ footer .copyright {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  background: rgba(186, 186, 186, 0.197);
+  background: hsl(313, 82%, 96%);
 }
-.wraps .contact-cont .contact-box h1 {
+.wraps .contact-cont .contact-box .rub {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+.wraps .contact-cont .contact-box .rub h1, .wraps .contact-cont .contact-box .rub h2 {
   font-size: 1.75rem;
   text-decoration: underline;
+}
+.wraps .contact-cont .contact-box ul {
+  height: 50%;
+  font-family: "PT Sans", sans-serif;
+}
+.wraps .contact-cont .contact-box ul li {
+  margin: 1.4rem;
+}
+.wraps .contact-cont .contact-box .img-cont {
+  width: 80%;
+  margin-bottom: 1.2rem;
+}
+.wraps .contact-cont .contact-box .img-cont img {
+  border-radius: 1rem;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border: solid 2px black;
 }
 .wraps .contact-cont .contact-box form {
   width: 85%;
@@ -304,6 +330,7 @@ footer .copyright {
   font-family: Nunito, sans-serif;
   border-radius: 4px;
   border-style: double;
+  margin-bottom: 1rem;
   transition: opacity 0.5s, opacity 0.5s, box-shadow 0.5s;
 }
 .wraps .contact-cont .contact-box form #skicka:hover {
