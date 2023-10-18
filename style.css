@@ -296,6 +296,7 @@ footer .copyright {
   flex-direction: column;
   background: hsl(313, 82%, 96%);
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+  font-family: "PT Sans", sans-serif;
 }
 .wraps .contact-cont .contact-box .rub {
   width: 100%;
@@ -306,10 +307,10 @@ footer .copyright {
 .wraps .contact-cont .contact-box .rub h1, .wraps .contact-cont .contact-box .rub h2 {
   font-size: 1.75rem;
   text-decoration: underline;
+  font-family: Nunito, sans-serif;
 }
 .wraps .contact-cont .contact-box ul {
   height: 40%;
-  font-family: "PT Sans", sans-serif;
 }
 .wraps .contact-cont .contact-box ul li {
   margin-bottom: 1.5rem;

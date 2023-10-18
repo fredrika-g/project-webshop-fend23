@@ -21,6 +21,7 @@
         flex-direction: column;
         background: $clr-primary-100;
         @include thirdD-effect;
+        font-family: $font-body;
 
         .rub{
             width: 100%;
@@ -30,11 +31,11 @@
             h1,h2{
                 font-size: $fs-300;
                 text-decoration: underline;
+                font-family: $font-heading; 
             }
         }
         ul{
             height: 40%;
-            font-family: $font-body;
             li{
                 margin-bottom: 1.5rem;
             }
