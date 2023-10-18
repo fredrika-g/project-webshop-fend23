@@ -80,7 +80,7 @@
         }
 
         img{
-            max-width: 26rem;
+            max-width: 20rem;
 
             @include devices(desktop){
                 max-width: 17rem;
