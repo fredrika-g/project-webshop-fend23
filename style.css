@@ -285,6 +285,8 @@ footer .copyright {
   justify-content: space-around;
   flex-direction: column;
   background: hsl(313, 82%, 96%);
+  transition: opacity 0.5s, opacity 0.5s, box-shadow 0.5s;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
 .wraps .contact-cont .contact-box .rub {
   display: flex;
