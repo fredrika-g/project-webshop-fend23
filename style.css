@@ -11,7 +11,7 @@ img {
 
 body {
   font-family: "PT Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
@@ -53,7 +53,7 @@ ul[class] {
   padding: 0.5em 1em;
   color: hsl(0, 0%, 0%);
   cursor: pointer;
-  transition: transform 250ms ease;
+  transition: transform 250ms ease, background-color 250ms ease;
 }
 .btn:hover, .btn:focus-visible {
   transform: scale(1.025);
@@ -68,6 +68,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  padding-top: 1.5rem;
 }
 @media (min-width: 42rem) {
   header {
@@ -162,17 +163,22 @@ header .navigation {
     align-items: start;
   }
 }
-.main-wrapper .main-intro .wrapper .slogan {
-  font-size: 1.5rem;
+.main-wrapper .main-intro .wrapper .slogan p {
+  font-size: 1.75rem;
   white-space: nowrap;
   font-style: italic;
 }
-.main-wrapper .main-intro .wrapper .slogan::before {
+@media (min-width: 42rem) {
+  .main-wrapper .main-intro .wrapper .slogan p {
+    font-size: 1.5rem;
+  }
+}
+.main-wrapper .main-intro .wrapper .slogan p::before {
   content: open-quote;
   font-size: 5rem;
   color: hsl(272, 43%, 55%);
 }
-.main-wrapper .main-intro .wrapper .slogan::after {
+.main-wrapper .main-intro .wrapper .slogan p::after {
   content: close-quote;
   font-size: 5rem;
   color: hsl(272, 43%, 55%);
@@ -204,6 +210,9 @@ header .navigation {
   border: none;
   color: hsl(0, 0%, 100%);
 }
+.main-wrapper .main-product-info .cta:hover {
+  background-color: hsl(272, 43%, 30%);
+}
 .main-wrapper .main-product-info img {
   max-width: 20rem;
   border-radius: 0.25rem;
@@ -216,7 +225,6 @@ header .navigation {
 
 footer {
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background: rgba(186, 186, 186, 0.197);
   gap: 2rem;
@@ -466,7 +474,6 @@ footer .copyright {
 }
 .references-wrapper .reference-grid {
   display: grid;
-  place-items: center;
   gap: 3rem;
 }
 @media (min-width: 42rem) {

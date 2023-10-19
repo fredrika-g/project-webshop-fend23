@@ -17,7 +17,7 @@ img{
 
 body{
     font-family: $font-body;
-    line-height: 1.5;
+    line-height: 1.6;
     min-height: 100vh;
 }
 
@@ -62,7 +62,7 @@ ul[class]{
     padding: .5em 1em;
     color: $clr-neutral-900;
     cursor: pointer;
-    transition: transform 250ms ease;
+    transition: transform 250ms ease, background-color 250ms ease;
 
     &:hover,
     &:focus-visible{
