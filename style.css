@@ -11,7 +11,7 @@ img {
 
 body {
   font-family: "PT Sans", sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   min-height: 100vh;
 }
 
@@ -53,7 +53,7 @@ ul[class] {
   padding: 0.5em 1em;
   color: hsl(0, 0%, 0%);
   cursor: pointer;
-  transition: transform 250ms ease;
+  transition: transform 250ms ease, background-color 250ms ease;
 }
 .btn:hover, .btn:focus-visible {
   transform: scale(1.025);
@@ -68,8 +68,9 @@ header {
   justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  padding-top: 1.5rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   header {
     flex-direction: row;
   }
@@ -82,7 +83,7 @@ header a:hover, header a:focus-visible {
   color: hsl(272, 43%, 55%);
 }
 header .company-name {
-  font-size: clamp(1.5rem, 10vw, 2.25rem);
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
   font-weight: 700;
   background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
   -webkit-background-clip: text;
@@ -102,7 +103,7 @@ header ul {
   gap: 1rem;
   font-size: 1.5rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   header ul {
     flex-direction: row;
     font-size: 1.125rem;
@@ -117,7 +118,7 @@ header .navigation {
   border-radius: 0.5rem;
   padding: 1rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   header .navigation {
     background: none;
     width: auto;
@@ -148,30 +149,38 @@ header .navigation {
 }
 .main-wrapper .main-intro h1 {
   margin-block: 2rem;
-  font-size: 2.25rem;
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  color: hsl(272, 43%, 30%);
 }
 .main-wrapper .main-intro .wrapper {
   flex-direction: column;
   align-items: center;
   gap: 3rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .main-wrapper .main-intro .wrapper {
     flex-direction: row;
+    align-items: start;
   }
 }
-.main-wrapper .main-intro .wrapper .slogan {
-  font-size: 1.5rem;
+.main-wrapper .main-intro .wrapper .slogan p {
+  font-size: 1.75rem;
   white-space: nowrap;
+  font-style: italic;
 }
-.main-wrapper .main-intro .wrapper .slogan::before {
+@media (min-width: 42rem) {
+  .main-wrapper .main-intro .wrapper .slogan p {
+    font-size: 1.5rem;
+  }
+}
+.main-wrapper .main-intro .wrapper .slogan p::before {
   content: open-quote;
-  font-size: 4rem;
+  font-size: 5rem;
   color: hsl(272, 43%, 55%);
 }
-.main-wrapper .main-intro .wrapper .slogan::after {
+.main-wrapper .main-intro .wrapper .slogan p::after {
   content: close-quote;
-  font-size: 4rem;
+  font-size: 5rem;
   color: hsl(272, 43%, 55%);
 }
 .main-wrapper .main-intro .wrapper article {
@@ -190,7 +199,7 @@ header .navigation {
   padding: 2rem;
   background-color: hsl(272, 43%, 85%);
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .main-wrapper .main-product-info {
     flex-direction: row;
   }
@@ -201,10 +210,14 @@ header .navigation {
   border: none;
   color: hsl(0, 0%, 100%);
 }
+.main-wrapper .main-product-info .cta:hover {
+  background-color: hsl(272, 43%, 30%);
+}
 .main-wrapper .main-product-info img {
   max-width: 20rem;
+  border-radius: 0.25rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .main-wrapper .main-product-info img {
     max-width: 17rem;
   }
@@ -212,7 +225,6 @@ header .navigation {
 
 footer {
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   background: rgba(186, 186, 186, 0.197);
   gap: 2rem;
@@ -223,13 +235,16 @@ footer .wrapper {
   flex-direction: column;
   gap: 1.5rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   footer .wrapper {
     flex-direction: row;
     margin-top: 1.2rem;
   }
 }
-@media (min-width: 40rem) {
+footer .logo {
+  max-width: 7rem;
+}
+@media (min-width: 42rem) {
   footer .logo {
     margin-left: 6rem;
   }
@@ -242,6 +257,7 @@ footer .footer-nav {
 }
 footer .footer-nav p {
   font-size: 1.5rem;
+  font-weight: 700;
   background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
   -webkit-background-clip: text;
           background-clip: text;
@@ -253,25 +269,33 @@ footer .footer-nav p:hover {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   footer .footer-nav p {
     font-size: 2.25rem;
   }
 }
 footer .footer-nav ul {
-  gap: 0.75rem;
+  gap: 1rem;
   flex-direction: column;
 }
 footer .footer-nav ul a {
   text-decoration: none;
   color: hsl(0, 0%, 0%);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+@media (min-width: 42rem) {
+  footer .footer-nav ul a {
+    font-size: 1.125rem;
+  }
 }
 footer .footer-nav ul a:hover, footer .footer-nav ul a:focus-visible {
   color: hsl(272, 43%, 45%);
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   footer .footer-nav ul {
     flex-direction: row;
+    gap: 0.75rem;
   }
 }
 footer .copyright {
@@ -299,7 +323,7 @@ footer .copyright {
 .wraps {
   flex-direction: column;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .wraps {
     flex-direction: row;
   }
@@ -310,7 +334,7 @@ footer .copyright {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .wraps .contact-cont {
     height: 80vh;
   }
@@ -396,12 +420,16 @@ footer .copyright {
   gap: 3rem;
   margin-block: 5rem;
 }
+.product-page-wrapper h1 {
+  color: hsl(272, 43%, 30%);
+  font-size: clamp(1.5rem, 8vw, 2.25rem);
+}
 .product-page-wrapper .product-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .product-page-wrapper .product-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -441,14 +469,14 @@ footer .copyright {
   padding: 3rem 1rem;
 }
 .references-wrapper h1 {
-  font-size: clamp(1.5rem, 6vw, 1.75rem);
+  font-size: clamp(1.5rem, 8vw, 2.25rem);
+  color: hsl(272, 43%, 30%);
 }
 .references-wrapper .reference-grid {
   display: grid;
-  place-items: center;
   gap: 3rem;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .references-wrapper .reference-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -458,7 +486,7 @@ footer .copyright {
   gap: 1rem;
   align-items: center;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .references-wrapper .reference-grid .reference {
     flex-direction: row;
     align-items: start;
@@ -474,7 +502,7 @@ footer .copyright {
   border: 1px solid hsl(272, 43%, 55%);
   transition: transform 300ms ease;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .references-wrapper .reference-grid .reference img {
     max-width: 5rem;
   }
@@ -487,7 +515,7 @@ footer .copyright {
   gap: 1rem;
   max-width: 35ch;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .references-wrapper .reference-grid .reference .wrapper {
     max-width: 30ch;
   }

@@ -8,6 +8,12 @@
     gap: 3rem;
     margin-block: 5rem;
 
+    h1{
+        color: $clr-primary-500;
+        font-size: clamp($fs-200, 8vw, $fs-400);
+
+    }
+
     .product-grid{
         display: grid;
         grid-template-columns: 1fr;

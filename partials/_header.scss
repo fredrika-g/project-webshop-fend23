@@ -6,6 +6,7 @@ header{
     justify-content: space-evenly;
     align-items:center;
     gap: 1rem;
+    padding-top: 1.5rem;
 
     @include devices(desktop){
         flex-direction: row;
@@ -22,7 +23,7 @@ header{
     }
 
     .company-name{
-        font-size: clamp($fs-200, 10vw, $fs-400);
+        font-size: clamp($fs-200, 5vw, $fs-500);
         font-weight: 700;
         background: linear-gradient(
             to right,

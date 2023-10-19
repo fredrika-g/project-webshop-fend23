@@ -28,36 +28,49 @@
 
         h1{
             margin-block: 2rem;
-            font-size: $fs-400;
+            font-size: clamp($fs-300, 5vw, $fs-500);
+            color: $clr-primary-500;
         }
     
        .wrapper{
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+        
 
 
             @include devices(desktop){
                 flex-direction: row;
+                align-items: start;
             }
 
             
 
             .slogan{
-                font-size: $fs-200;
-                white-space: nowrap;
+                
 
-                &::before{
-                    content: open-quote;
-                    font-size: 4rem;
-                    color: $clr-primary-300;
-                }
+                p{
+                    font-size: $fs-300;
+                    white-space: nowrap;
+                    font-style: italic;
 
-                &::after{
-                    content: close-quote;
-                    font-size: 4rem;
-                    color: $clr-primary-300;
+                    @include devices(desktop){
+                        font-size: $fs-200;
+                    }
+
+                    &::before{
+                        content: open-quote;
+                        font-size: 5rem;
+                        color: $clr-primary-300;
+                    }
+    
+                    &::after{
+                        content: close-quote;
+                        font-size: 5rem;
+                        color: $clr-primary-300;
+                    }
                 }
+                
             }
     
             article{
@@ -92,10 +105,15 @@
             background-color: $clr-primary-400;
             border: none;
             color: $clr-neutral-100;
+
+            &:hover{
+                background-color: $clr-primary-500;
+            }
         }
 
         img{
             max-width: 20rem;
+            border-radius: 0.25rem;
 
             @include devices(desktop){
                 max-width: 17rem;
