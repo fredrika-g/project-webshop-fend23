@@ -38,7 +38,7 @@
                 aspect-ratio: 1;
                 max-width: 7rem;
                 border-radius: 50%;
-                border: 1px solid;
+                border: 1px solid $clr-primary-300;
 
                 @include devices(desktop){
                     max-width: 5rem;
@@ -54,6 +54,10 @@
                 
                 @include devices(desktop){
                     max-width: 30ch;
+                }
+
+                .stars{
+                    color: $clr-primary-400;
                 }
             }
 

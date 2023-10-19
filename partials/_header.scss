@@ -18,6 +18,7 @@ header{
 
     .company-name{
         font-size: clamp($fs-200, 10vw, $fs-400);
+        font-weight: 700;
         background: linear-gradient(
             to right,
             #55aef6,
