@@ -39,9 +39,14 @@
                 max-width: 7rem;
                 border-radius: 50%;
                 border: 1px solid $clr-primary-300;
+                transition: transform 300ms ease;
 
                 @include devices(desktop){
                     max-width: 5rem;
+                }
+
+                &:hover{
+                    transform: scale(1.05);
                 }
 
                 

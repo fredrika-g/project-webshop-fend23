@@ -41,6 +41,8 @@ ul[class] {
 
 .current {
   text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: hsl(272, 43%, 45%);
 }
 
 .btn {
@@ -75,6 +77,9 @@ header {
 header a {
   text-decoration: none;
   color: hsl(0, 0%, 0%);
+}
+header a:hover, header a:focus-visible {
+  color: hsl(272, 43%, 55%);
 }
 header .company-name {
   font-size: clamp(1.5rem, 10vw, 2.25rem);
@@ -122,7 +127,7 @@ header .navigation {
 
 .main-banner {
   margin-top: 3rem;
-  height: 40rem;
+  height: 37rem;
 }
 .main-banner img {
   width: 100%;
@@ -132,17 +137,11 @@ header .navigation {
 }
 
 .main-wrapper {
-  margin: 4rem 0;
-  flex-direction: column-reverse;
-  gap: 4rem;
-  padding: 0 2rem;
-}
-@media (min-width: 40rem) {
-  .main-wrapper {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  gap: 2rem;
 }
 .main-wrapper .main-intro {
+  padding: 2rem;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
@@ -162,7 +161,18 @@ header .navigation {
   }
 }
 .main-wrapper .main-intro .wrapper .slogan {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+.main-wrapper .main-intro .wrapper .slogan::before {
+  content: open-quote;
+  font-size: 4rem;
+  color: hsl(272, 43%, 55%);
+}
+.main-wrapper .main-intro .wrapper .slogan::after {
+  content: close-quote;
+  font-size: 4rem;
+  color: hsl(272, 43%, 55%);
 }
 .main-wrapper .main-intro .wrapper article {
   flex-direction: column;
@@ -177,6 +187,8 @@ header .navigation {
   align-items: center;
   justify-content: space-evenly;
   gap: 2rem;
+  padding: 2rem;
+  background-color: hsl(272, 43%, 85%);
 }
 @media (min-width: 40rem) {
   .main-wrapper .main-product-info {
@@ -185,7 +197,7 @@ header .navigation {
 }
 .main-wrapper .main-product-info .cta {
   font-size: 1.5rem;
-  background-color: hsl(272, 43%, 55%);
+  background-color: hsl(272, 43%, 45%);
   border: none;
   color: hsl(0, 0%, 100%);
 }
@@ -253,6 +265,9 @@ footer .footer-nav ul {
 footer .footer-nav ul a {
   text-decoration: none;
   color: hsl(0, 0%, 0%);
+}
+footer .footer-nav ul a:hover, footer .footer-nav ul a:focus-visible {
+  color: hsl(272, 43%, 45%);
 }
 @media (min-width: 40rem) {
   footer .footer-nav ul {
@@ -457,11 +472,15 @@ footer .copyright {
   max-width: 7rem;
   border-radius: 50%;
   border: 1px solid hsl(272, 43%, 55%);
+  transition: transform 300ms ease;
 }
 @media (min-width: 40rem) {
   .references-wrapper .reference-grid .reference img {
     max-width: 5rem;
   }
+}
+.references-wrapper .reference-grid .reference img:hover {
+  transform: scale(1.05);
 }
 .references-wrapper .reference-grid .reference .wrapper {
   flex-direction: column;
