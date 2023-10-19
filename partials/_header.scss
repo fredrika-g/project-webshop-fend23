@@ -28,12 +28,11 @@ header{
             #d873f9,
             #f9739d,
             #f973de,
-            
-            
-            
             );    
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
             &:hover{
                 background: linear-gradient(
                     to right,
