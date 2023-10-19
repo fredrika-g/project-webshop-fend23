@@ -2,7 +2,7 @@
 @mixin devices ($breakpoint) { 
  
   @if $breakpoint == desktop {
-    @media (min-width: 40rem) {
+    @media (min-width: 42rem) {
       @content;
     }
   }

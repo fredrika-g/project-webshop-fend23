@@ -28,7 +28,8 @@
 
         h1{
             margin-block: 2rem;
-            font-size: $fs-400;
+            font-size: clamp($fs-300, 5vw, $fs-500);
+            color: $clr-primary-500;
         }
     
        .wrapper{
@@ -39,6 +40,7 @@
 
             @include devices(desktop){
                 flex-direction: row;
+                align-items: start;
             }
 
             
@@ -46,16 +48,18 @@
             .slogan{
                 font-size: $fs-200;
                 white-space: nowrap;
+                font-style: italic;
+                
 
                 &::before{
                     content: open-quote;
-                    font-size: 4rem;
+                    font-size: 5rem;
                     color: $clr-primary-300;
                 }
 
                 &::after{
                     content: close-quote;
-                    font-size: 4rem;
+                    font-size: 5rem;
                     color: $clr-primary-300;
                 }
             }
@@ -96,6 +100,7 @@
 
         img{
             max-width: 20rem;
+            border-radius: 0.25rem;
 
             @include devices(desktop){
                 max-width: 17rem;

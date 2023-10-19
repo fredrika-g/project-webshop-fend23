@@ -8,7 +8,8 @@
     padding: 3rem 1rem;
 
     h1{
-        font-size: clamp($fs-200, 6vw, $fs-300);
+        font-size: clamp($fs-200, 8vw, $fs-400);
+        color: $clr-primary-500;
     }
 
     .reference-grid{
