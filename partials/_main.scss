@@ -3,7 +3,7 @@
 
 .main-banner{
     margin-top: 3rem;
-    height: 40rem;
+    height: 37rem;
 
     img{
         width: 100%;
@@ -15,20 +15,13 @@
 
 
 .main-wrapper{
-    margin: 4rem 0;
-
-    flex-direction: column-reverse;
-    gap: 4rem;
-    padding: 0 2rem;
-
-    @include devices(desktop){
-        flex-direction: column;
-    }
-
+    flex-direction: column;
+    gap: 2rem;
 
 
     .main-intro{
 
+        padding: 2rem;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
@@ -48,8 +41,23 @@
                 flex-direction: row;
             }
 
+            
+
             .slogan{
-                font-size: $fs-300;
+                font-size: $fs-200;
+                white-space: nowrap;
+
+                &::before{
+                    content: open-quote;
+                    font-size: 4rem;
+                    color: $clr-primary-300;
+                }
+
+                &::after{
+                    content: close-quote;
+                    font-size: 4rem;
+                    color: $clr-primary-300;
+                }
             }
     
             article{
@@ -71,6 +79,8 @@
         align-items: center;
         justify-content: space-evenly;
         gap: 2rem;
+        padding: 2rem;
+        background-color: $clr-primary-150;
 
         @include devices(desktop){
             flex-direction: row;
@@ -79,7 +89,7 @@
 
         .cta{
             font-size: $fs-200;
-            background-color: $clr-primary-300;
+            background-color: $clr-primary-400;
             border: none;
             color: $clr-neutral-100;
         }
