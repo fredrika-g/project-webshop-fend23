@@ -54,10 +54,21 @@ ul[class]{
 
 .btn{
     display: inline-block;
-    border-radius: 0.125rem;
+    border-radius: 0.2rem;
     border: 1px solid;
     text-decoration: none;
     padding: .5em 1em;
     color: $clr-neutral-900;
     cursor: pointer;
+    transition: transform 250ms ease;
+
+    &:hover,
+    &:focus-visible{
+        transform: scale(1.025);
+    }
+
+    &:focus-visible{
+        outline: 2px solid $clr-primary-200;
+        outline-offset: 0.25rem;
+    }
 }
