@@ -21,7 +21,7 @@
         @include spaceAround;
         flex-direction: column;
         background: $clr-primary-100;
-        background: linear-gradient($clr-neutral-100, $clr-primary-100, $clr-primary-150);
+        background: linear-gradient($clr-neutral-100, $clr-primary-100);
         @include thirdD-effect;
         font-family: $font-body;
 
