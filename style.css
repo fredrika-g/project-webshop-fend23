@@ -318,11 +318,7 @@ footer .copyright {
   justify-content: center;
 }
 @media (min-width: 42rem) {
-
   .wrapper-about .history {
-
-  .history {
-
     height: 30%;
   }
 }
@@ -335,12 +331,7 @@ footer .copyright {
   font-size: 1.125rem;
   max-width: 60ch;
 }
-
-
-
-
-.staff {
-
+.wrapper-about .staff {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
@@ -380,7 +371,7 @@ footer .copyright {
   font-family: Nunito, sans-serif;
 }
 .wrapper-about .staff .employee-box .role-info .role-about {
-  max-width: 45ch;
+  max-width: 60ch;
   padding-top: 1rem;
 }
 
