@@ -114,7 +114,7 @@ header .logo {
   margin-top: 1rem;
 }
 header .navigation {
-  background: hsl(272, 43%, 85%);
+  background: hsl(313, 82%, 96%);
   width: 60%;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -228,7 +228,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background-color: hsl(272, 43%, 85%);
+  background-color: hsl(313, 82%, 96%);
 }
 footer .wrapper {
   align-items: center;
@@ -403,7 +403,7 @@ footer .copyright {
   align-items: center;
   flex-direction: column;
   background: hsl(313, 82%, 96%);
-  background: linear-gradient(hsl(0, 0%, 100%), hsl(313, 82%, 96%), hsl(272, 43%, 85%));
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(313, 82%, 96%));
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
   font-family: "PT Sans", sans-serif;
 }
