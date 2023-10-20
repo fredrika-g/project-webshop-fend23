@@ -1,23 +1,111 @@
-@use "variables" as *;
+@use "variables" as*;
+@use "mixins" as *;
 
-.about-us{
-        flex-direction: column;
-        align-items: center;
+
+.wrapper{
+    //display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: lightgoldenrodyellow;
+    margin: 0.5rem;
+
+    /*@include devices(desktop){
+        flex-direction: row;
+    }*/
+    
 }
 
 .history{
+    //display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: lightcyan;
     
-    font-size: 0.8rem;
+    @include devices(desktop){
+        height: 30%;
+    }
+
+
+.history-cont{
+    //display: flex;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-around;
+
+    p{
+        text-align: center;
+        font-family: $font-body;
+        font-size: $fs-100;
+    }
+}
 }
 
-    .employee{
-        min-width: 0.6rem;
-        border: 1px solid black;
-        gap: 1rem;
-        
-        
+.staff{
+    //display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: lightpink;
+    
+.employee-box{
+
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    
+
     p{
-        font-size: 0.6rem;
+        margin: 1rem;
     }
+
+
+.img-container{
+    display: flex;
+    
+    flex-direction: column;
+    
+    
+
+    img{
+        border-radius: 30%;
+        border-style: none;
     }
+}
+
+.role-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .role-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: $fs-200;
+        font-family: $font-heading;
+    }
+    
+    .role-name{
+        font-size: $fs-100;
+        font-family: $font-heading;
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.9rem;
+        font-family: $font-body;
+        margin: 1rem;
+    }
+}
+}
+}
 
