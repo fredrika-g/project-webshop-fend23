@@ -3,35 +3,33 @@
 
 
 .wrapper-about{
-    
     align-items: center;
     flex-direction: column;
-    margin: 0.5rem;
+    padding-block: 4rem;
     gap: 2rem;
 
+    .slogan{
+        font-size: clamp($fs-200, 8vw, $fs-400);
 
+    }
     .history{
-        //display: flex;
         width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: lightcyan;
         
         @include devices(desktop){
             height: 30%;
         }
 
-
         .history-cont{
             margin: 1rem;
-            align-items: center;
-            justify-content: space-around;
-
+    
             p{
                 text-align: center;
                 font-family: $font-body;
                 font-size: $fs-100;
+                max-width: 60ch;
             }
         }
     }
@@ -39,39 +37,33 @@
     .staff{
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        background: lightpink;
+        gap: 4rem;
         
     .employee-box{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 0.5rem;
-        padding: 0.5rem;
+        gap: 2rem;
 
         @include devices(desktop){
             flex-direction: row;
         }
 
-
-        
-
-        p{
-            margin: 1rem;
-        }
-
         img{
             border-radius: 50%;
             border-style: none;
-            max-width: 15rem;
+            max-width: 10rem;
         }
     
-
     .role-info{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+
+        @include devices(desktop){
+            align-items: start;
+        }
+
         .role-title{
             font-size: $fs-200;
             font-family: $font-heading;
@@ -82,10 +74,10 @@
             font-family: $font-heading;
         }
 
-        p {
-            text-align: center;
-            font-size: 0.9rem;
-            margin: 1rem;
+        .role-about {
+
+            max-width: 45ch;
+            padding-top: 1rem;
         }
     }
     }
