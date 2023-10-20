@@ -315,14 +315,12 @@ footer .copyright {
 
 .history {
   width: 100%;
-}
-.about-us {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: lightcyan;
 }
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .history {
     height: 30%;
   }
@@ -337,7 +335,6 @@ footer .copyright {
   font-family: "PT Sans", sans-serif;
   font-size: 1.125rem;
 }
-
 
 .staff {
   flex-direction: column;
@@ -389,7 +386,6 @@ footer .copyright {
   margin: 1rem;
 }
 
-
 .wraps {
   flex-direction: column;
 }
@@ -406,7 +402,8 @@ footer .copyright {
 }
 @media (min-width: 42rem) {
   .wraps .contact-cont {
-    height: 80vh;
+    max-height: 95vh;
+    max-height: 800px;
   }
 }
 .wraps .contact-cont .contact-box {
@@ -450,7 +447,7 @@ footer .copyright {
 }
 .wraps .contact-cont .contact-box .img-cont img:hover {
   transition: ease 2s;
-  scale: 0.7;
+  scale: 0.6;
   position: absolute;
   top: 0;
   right: 0;
@@ -482,7 +479,6 @@ footer .copyright {
   cursor: pointer;
   opacity: 0.8;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
-
 }
 
 .product-page-wrapper {

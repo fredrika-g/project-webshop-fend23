@@ -10,7 +10,9 @@
     height: 90vh;
     @include center;
     @include devices(desktop){
-        height: 80vh;
+        
+        max-height: 95vh;
+        max-height: 800px;
     }
     .contact-box{
         width: 90%;
@@ -51,7 +53,7 @@
                 
                 &:hover{
                     transition: ease 2s;
-                    scale: 0.7;
+                    scale: 0.6;
                     position: absolute;
                     top: 0;
                     right: 0;
