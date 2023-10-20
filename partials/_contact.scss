@@ -7,12 +7,11 @@
     }
 .contact-cont{
     width: 100%;
-    height: 90vh;
+    min-height: 85vh;
     @include center;
     @include devices(desktop){
         
-        max-height: 95vh;
-        max-height: 800px;
+        min-height: 95vh;
     }
     .contact-box{
         width: 90%;
@@ -27,19 +26,25 @@
 
         .rub{
             width: 100%;
-            height: 20%;
+            
             @include center;
             
             h1,h2{
                 font-size: $fs-300;
                 text-decoration: underline;
                 font-family: $font-heading; 
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
         }
         ul{
-            height: 40%;
+            
+            margin-bottom: 1rem;
+            margin-top: 1rem;
             li{
                 margin-bottom: 1.5rem;
+                margin-top: 1rem;
+                text-decoration: underline;
             }
         }
         .img-cont{
@@ -67,8 +72,21 @@
             @include spaceAround;
             flex-direction: column;
             font-family: $font-body;
+
+            input{
+                margin-bottom: 1.5rem;
+                @include border;
+            }
+            select{
+                margin-bottom: 1.5rem;
+                @include border;
+                
+            }
+            
             #meddelande{
                 width: 90%;
+                @include border;
+                
             }
             #skicka{
                 height: 2.5rem;
