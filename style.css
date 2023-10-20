@@ -226,7 +226,6 @@ header .navigation {
 footer {
   flex-direction: column;
   align-items: center;
-  background: rgba(186, 186, 186, 0.197);
   gap: 2rem;
   background-color: hsl(313, 82%, 96%);
 }
@@ -255,7 +254,7 @@ footer .footer-nav {
   gap: 1rem;
   text-align: center;
 }
-footer .footer-nav p {
+footer .footer-nav .company-name {
   font-size: 1.5rem;
   font-weight: 700;
   background: linear-gradient(to right, #55aef6, #6453fc, #8053fc, #ad53fc, #d873f9, #f9739d, #f973de);
@@ -263,14 +262,14 @@ footer .footer-nav p {
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-footer .footer-nav p:hover {
+footer .footer-nav .company-name:hover {
   background: linear-gradient(to right, #f973de, #f9739d, #ad53fc, #d873f9, #8053fc, #6453fc, #55aef6);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 @media (min-width: 42rem) {
-  footer .footer-nav p {
+  footer .footer-nav .company-name {
     font-size: 2.25rem;
   }
 }
@@ -316,11 +315,7 @@ footer .copyright {
   background: lightcyan;
 }
 @media (min-width: 42rem) {
-
   .wrapper-about .history {
-
-  .history {
-
     height: 30%;
   }
 }
@@ -334,12 +329,7 @@ footer .copyright {
   font-family: "PT Sans", sans-serif;
   font-size: 1.125rem;
 }
-
-
-
-
-.staff {
-
+.wrapper-about .staff {
   flex-direction: column;
   align-items: center;
   justify-content: center;
