@@ -2,110 +2,93 @@
 @use "mixins" as *;
 
 
-.wrapper{
-    //display: flex;
+.wrapper-about{
+    
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    background: lightgoldenrodyellow;
     margin: 0.5rem;
-
-    /*@include devices(desktop){
-        flex-direction: row;
-    }*/
-    
-}
-
-.history{
-    //display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: lightcyan;
-    
-    @include devices(desktop){
-        height: 30%;
-    }
+    gap: 2rem;
 
 
-.history-cont{
-    //display: flex;
-    margin: 1rem;
-    align-items: center;
-    justify-content: space-around;
-
-    p{
-        text-align: center;
-        font-family: $font-body;
-        font-size: $fs-100;
-    }
-}
-}
-
-.staff{
-    //display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: lightpink;
-    
-.employee-box{
-
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    //border: 1px solid black;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    
-
-    p{
-        margin: 1rem;
-    }
-
-
-.img-container{
-    display: flex;
-    
-    flex-direction: column;
-    
-    
-
-    img{
-        border-radius: 30%;
-        border-style: none;
-    }
-}
-
-.role-info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-    .role-title{
-        display: flex;
-        justify-content: center;
+    .history{
+        //display: flex;
+        width: 100%;
+        flex-direction: column;
         align-items: center;
-        font-size: $fs-200;
-        font-family: $font-heading;
+        justify-content: center;
+        background: lightcyan;
+        
+        @include devices(desktop){
+            height: 30%;
+        }
+
+
+        .history-cont{
+            margin: 1rem;
+            align-items: center;
+            justify-content: space-around;
+
+            p{
+                text-align: center;
+                font-family: $font-body;
+                font-size: $fs-100;
+            }
+        }
     }
+
+    .staff{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: lightpink;
+        
+    .employee-box{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0.5rem;
+        padding: 0.5rem;
+
+        @include devices(desktop){
+            flex-direction: row;
+        }
+
+
+        
+
+        p{
+            margin: 1rem;
+        }
+
+        img{
+            border-radius: 50%;
+            border-style: none;
+            max-width: 15rem;
+        }
     
-    .role-name{
-        font-size: $fs-100;
-        font-family: $font-heading;
+
+    .role-info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        .role-title{
+            font-size: $fs-200;
+            font-family: $font-heading;
+        }
+        
+        .role-name{
+            font-size: $fs-100;
+            font-family: $font-heading;
+        }
+
+        p {
+            text-align: center;
+            font-size: 0.9rem;
+            margin: 1rem;
+        }
+    }
+    }
     }
 
-    p {
-        text-align: center;
-        font-size: 0.9rem;
-        font-family: $font-body;
-        margin: 1rem;
-    }
 }
-}
-}
-

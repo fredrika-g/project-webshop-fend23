@@ -302,18 +302,13 @@ footer .copyright {
   font-size: 0.75rem;
 }
 
-.wrapper {
+.wrapper-about {
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-  background: lightgoldenrodyellow;
   margin: 0.5rem;
-  /*@include devices(desktop){
-      flex-direction: row;
-  }*/
+  gap: 2rem;
 }
-
-.history {
+.wrapper-about .history {
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -321,68 +316,71 @@ footer .copyright {
   background: lightcyan;
 }
 @media (min-width: 42rem) {
+
+  .wrapper-about .history {
+
   .history {
+
     height: 30%;
   }
 }
-.history .history-cont {
+.wrapper-about .history .history-cont {
   margin: 1rem;
   align-items: center;
   justify-content: space-around;
 }
-.history .history-cont p {
+.wrapper-about .history .history-cont p {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 1.125rem;
 }
 
+
+
+
 .staff {
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background: lightpink;
 }
-.staff .employee-box {
-  max-width: 80%;
-  display: flex;
+.wrapper-about .staff .employee-box {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0.5rem;
   padding: 0.5rem;
 }
-.staff .employee-box p {
+@media (min-width: 42rem) {
+  .wrapper-about .staff .employee-box {
+    flex-direction: row;
+  }
+}
+.wrapper-about .staff .employee-box p {
   margin: 1rem;
 }
-.staff .employee-box .img-container {
-  display: flex;
-  flex-direction: column;
-}
-.staff .employee-box .img-container img {
-  border-radius: 30%;
+.wrapper-about .staff .employee-box img {
+  border-radius: 50%;
   border-style: none;
+  max-width: 15rem;
 }
-.staff .employee-box .role-info {
-  display: flex;
+.wrapper-about .staff .employee-box .role-info {
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.staff .employee-box .role-info .role-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wrapper-about .staff .employee-box .role-info .role-title {
   font-size: 1.5rem;
   font-family: Nunito, sans-serif;
 }
-.staff .employee-box .role-info .role-name {
+.wrapper-about .staff .employee-box .role-info .role-name {
   font-size: 1.125rem;
   font-family: Nunito, sans-serif;
 }
-.staff .employee-box .role-info p {
+.wrapper-about .staff .employee-box .role-info p {
   text-align: center;
   font-size: 0.9rem;
-  font-family: "PT Sans", sans-serif;
   margin: 1rem;
 }
 
