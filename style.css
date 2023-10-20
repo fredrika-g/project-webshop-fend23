@@ -384,14 +384,13 @@ footer .copyright {
 }
 .wraps .contact-cont {
   width: 100%;
-  height: 90vh;
+  min-height: 85vh;
   justify-content: center;
   align-items: center;
 }
 @media (min-width: 42rem) {
   .wraps .contact-cont {
-    max-height: 95vh;
-    max-height: 800px;
+    min-height: 95vh;
   }
 }
 .wraps .contact-cont .contact-box {
@@ -408,7 +407,6 @@ footer .copyright {
 }
 .wraps .contact-cont .contact-box .rub {
   width: 100%;
-  height: 20%;
   justify-content: center;
   align-items: center;
 }
@@ -416,12 +414,17 @@ footer .copyright {
   font-size: 1.75rem;
   text-decoration: underline;
   font-family: Nunito, sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .wraps .contact-cont .contact-box ul {
-  height: 40%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 .wraps .contact-cont .contact-box ul li {
   margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  text-decoration: underline;
 }
 .wraps .contact-cont .contact-box .img-cont {
   width: 80%;
@@ -449,8 +452,17 @@ footer .copyright {
   flex-direction: column;
   font-family: "PT Sans", sans-serif;
 }
+.wraps .contact-cont .contact-box form input {
+  margin-bottom: 1.5rem;
+  border: solid #000 2px;
+}
+.wraps .contact-cont .contact-box form select {
+  margin-bottom: 1.5rem;
+  border: solid #000 2px;
+}
 .wraps .contact-cont .contact-box form #meddelande {
   width: 90%;
+  border: solid #000 2px;
 }
 .wraps .contact-cont .contact-box form #skicka {
   height: 2.5rem;
