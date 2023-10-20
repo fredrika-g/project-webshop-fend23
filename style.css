@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap");
 * {
   box-sizing: border-box;
@@ -113,7 +114,7 @@ header .logo {
   margin-top: 1rem;
 }
 header .navigation {
-  background: hsl(313, 82%, 96%);
+  background: hsl(272, 43%, 85%);
   width: 60%;
   border-radius: 0.5rem;
   padding: 1rem;
@@ -227,7 +228,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  background-color: hsl(313, 82%, 96%);
+  background-color: hsl(272, 43%, 85%);
 }
 footer .wrapper {
   align-items: center;
@@ -402,6 +403,7 @@ footer .copyright {
   align-items: center;
   flex-direction: column;
   background: hsl(313, 82%, 96%);
+  background: linear-gradient(hsl(0, 0%, 100%), hsl(313, 82%, 96%), hsl(272, 43%, 85%));
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
   font-family: "PT Sans", sans-serif;
 }
@@ -436,7 +438,7 @@ footer .copyright {
      object-fit: fill;
   border: solid #000 2px;
 }
-.wraps .contact-cont .contact-box .img-cont img:hover {
+.wraps .contact-cont .contact-box .img-cont img:active {
   transition: ease 2s;
   scale: 0.6;
   position: absolute;
@@ -456,13 +458,18 @@ footer .copyright {
   margin-bottom: 1.5rem;
   border: solid #000 2px;
 }
+.wraps .contact-cont .contact-box form #Förnamn, .wraps .contact-cont .contact-box form #Efternamn, .wraps .contact-cont .contact-box form #E-postadress {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+}
 .wraps .contact-cont .contact-box form select {
   margin-bottom: 1.5rem;
   border: solid #000 2px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
 .wraps .contact-cont .contact-box form #meddelande {
   width: 90%;
   border: solid #000 2px;
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
 .wraps .contact-cont .contact-box form #skicka {
   height: 2.5rem;
