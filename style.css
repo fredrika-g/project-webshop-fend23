@@ -305,15 +305,17 @@ footer .copyright {
 .wrapper-about {
   align-items: center;
   flex-direction: column;
-  margin: 0.5rem;
+  padding-block: 4rem;
   gap: 2rem;
+}
+.wrapper-about .slogan {
+  font-size: clamp(1.5rem, 8vw, 2.25rem);
 }
 .wrapper-about .history {
   width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: lightcyan;
 }
 @media (min-width: 42rem) {
   .wrapper-about .history {
@@ -322,44 +324,43 @@ footer .copyright {
 }
 .wrapper-about .history .history-cont {
   margin: 1rem;
-  align-items: center;
-  justify-content: space-around;
 }
 .wrapper-about .history .history-cont p {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-size: 1.125rem;
+  max-width: 60ch;
 }
 .wrapper-about .staff {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: lightpink;
+  gap: 4rem;
 }
 .wrapper-about .staff .employee-box {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  gap: 2rem;
 }
 @media (min-width: 42rem) {
   .wrapper-about .staff .employee-box {
     flex-direction: row;
   }
 }
-.wrapper-about .staff .employee-box p {
-  margin: 1rem;
-}
 .wrapper-about .staff .employee-box img {
   border-radius: 50%;
   border-style: none;
-  max-width: 15rem;
+  max-width: 10rem;
 }
 .wrapper-about .staff .employee-box .role-info {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (min-width: 42rem) {
+  .wrapper-about .staff .employee-box .role-info {
+    align-items: start;
+  }
 }
 .wrapper-about .staff .employee-box .role-info .role-title {
   font-size: 1.5rem;
@@ -369,10 +370,9 @@ footer .copyright {
   font-size: 1.125rem;
   font-family: Nunito, sans-serif;
 }
-.wrapper-about .staff .employee-box .role-info p {
-  text-align: center;
-  font-size: 0.9rem;
-  margin: 1rem;
+.wrapper-about .staff .employee-box .role-info .role-about {
+  max-width: 45ch;
+  padding-top: 1rem;
 }
 
 .wraps {
