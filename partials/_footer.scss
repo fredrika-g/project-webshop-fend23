@@ -3,7 +3,7 @@
 
 footer{
     flex-direction: column;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
 
     background: rgba(186, 186, 186, 0.197);
@@ -19,9 +19,20 @@ footer{
 
         @include devices(desktop){
             flex-direction: row;
+            margin-top: 1.2rem;
+            
         }
     }
     
+    .logo{
+
+        max-width: 7rem;
+
+        @include devices(desktop){
+       
+            margin-left: 6rem;
+        }
+    }
 
 
     .footer-nav{
@@ -29,26 +40,84 @@ footer{
         align-items: center;
         gap: 1rem;
         text-align: center;
+        
+
+        p{
+            font-size: $fs-200;
+            font-weight: 700;
+            background: linear-gradient(
+                to right,
+                #55aef6,
+                #6453fc,
+                #8053fc,
+                #ad53fc,
+                #d873f9,
+                #f9739d,
+                #f973de,
+                
+                
+              );    
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              
+                &:hover{
+                    
+                    background: linear-gradient(
+                        to right,
+                        #f973de,
+                        #f9739d,
+                        #ad53fc,
+                        #d873f9,
+                        #8053fc,
+                        #6453fc,
+                        #55aef6,
+                        
+                        
+                        
+                        );    
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        
+                        
+              }
+              @include devices(desktop){
+                font-size: $fs-400;
+                
+            }
+              
+        }
 
         ul{
-            gap: 0.75rem;
+            gap: 1rem;
             flex-direction: column;
+
+          
 
             a{
                 text-decoration: none;
                 color: $clr-neutral-900;
+                font-size: $fs-200;
+                padding: 0.5rem;
+
+                @include devices(desktop){
+                    font-size: $fs-100;
+                }
+
+                &:hover,
+                &:focus-visible{
+                    color: $clr-primary-400;
+                }
             }
 
 
             @include devices(desktop){
                 flex-direction: row;
+                gap: 0.75rem;
             }
 
         }
 
-        .company-name{
-            font-size: $fs-200;
-        }
+        
     }
 
 

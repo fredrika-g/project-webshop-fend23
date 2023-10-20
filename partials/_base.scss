@@ -17,7 +17,8 @@ img{
 
 body{
     font-family: $font-body;
-    line-height: 1.5;
+    line-height: 1.6;
+    min-height: 100vh;
 }
 
 h1,
@@ -48,14 +49,28 @@ ul[class]{
 
 .current{
     text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: $clr-primary-400;
 }
 
 
 .btn{
     display: inline-block;
-    border-radius: 0.125rem;
+    border-radius: 0.2rem;
     border: 1px solid;
     text-decoration: none;
     padding: .5em 1em;
     color: $clr-neutral-900;
+    cursor: pointer;
+    transition: transform 250ms ease, background-color 250ms ease;
+
+    &:hover,
+    &:focus-visible{
+        transform: scale(1.025);
+    }
+
+    &:focus-visible{
+        outline: 2px solid $clr-primary-200;
+        outline-offset: 0.25rem;
+    }
 }

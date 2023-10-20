@@ -1,0 +1,63 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+
+.product-page-wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-block: 5rem;
+
+    h1{
+        color: $clr-primary-500;
+        font-size: clamp($fs-200, 8vw, $fs-400);
+
+    }
+
+    .product-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
+
+        @include devices(desktop){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .product-card{
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
+            justify-content: space-between;
+
+            text-align: center;
+
+            img{
+                max-width: 15rem;
+            }
+
+            .product-info{
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+
+                .product-name{
+                    font-size: $fs-200;
+                }
+
+
+                .buy-product{
+                    font-size: $fs-100;
+                    width: 8rem;
+                    background-color: $clr-primary-300;
+                    color: $clr-neutral-100;
+
+                    &:hover,
+                    &:focus-visible{
+                        background-color: $clr-primary-400;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

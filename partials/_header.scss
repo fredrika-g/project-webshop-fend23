@@ -6,6 +6,7 @@ header{
     justify-content: space-evenly;
     align-items:center;
     gap: 1rem;
+    padding-top: 1.5rem;
 
     @include devices(desktop){
         flex-direction: row;
@@ -14,11 +15,51 @@ header{
     a{
         text-decoration:none;
         color: $clr-neutral-900;
+
+        &:hover,
+        &:focus-visible{
+            color: $clr-primary-300;
+        }
     }
 
     .company-name{
-        font-size: clamp($fs-200, 10vw, $fs-400);
+        font-size: clamp($fs-200, 5vw, $fs-500);
+        font-weight: 700;
+        background: linear-gradient(
+            to right,
+            #55aef6,
+            #6453fc,
+            #8053fc,
+            #ad53fc,
+            #d873f9,
+            #f9739d,
+            #f973de,
+            );    
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+
+            &:hover{
+                background: linear-gradient(
+                    to right,
+                    #f973de,
+                    #f9739d,
+                    #ad53fc,
+                    #d873f9,
+                    #8053fc,
+                    #6453fc,
+                    #55aef6,
+                    
+                    
+                    
+                    );    
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    
+                    
+          }
     }
+    
 
     ul{
         flex-direction:column;
@@ -31,6 +72,7 @@ header{
             flex-direction: row;
             font-size: $fs-100;
         }
+        
     }
     .logo{
         margin-top: 1rem;
@@ -38,11 +80,13 @@ header{
     .navigation{
         background: $clr-primary-100;
         width: 60%;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
 
         @include devices(desktop){
             background: none;
             width: auto;
+            padding: 0;
         }
         
     }

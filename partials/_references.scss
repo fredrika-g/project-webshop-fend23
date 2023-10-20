@@ -1,0 +1,72 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.references-wrapper{
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 3rem 1rem;
+
+    h1{
+        font-size: clamp($fs-200, 8vw, $fs-400);
+        color: $clr-primary-500;
+    }
+
+    .reference-grid{
+        display: grid;
+        gap: 3rem;
+
+        @include devices(desktop){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .reference{
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+
+            @include devices(desktop){
+                flex-direction: row;
+                align-items: start;
+            }
+
+            h2{
+                font-size: $fs-200;
+            }
+
+            img{
+                aspect-ratio: 1;
+                max-width: 7rem;
+                border-radius: 50%;
+                border: 1px solid $clr-primary-300;
+                transition: transform 300ms ease;
+
+                @include devices(desktop){
+                    max-width: 5rem;
+                }
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+
+                
+            }
+
+            .wrapper{
+                flex-direction: column;
+                gap: 1rem;
+                max-width: 35ch;
+                
+                @include devices(desktop){
+                    max-width: 30ch;
+                }
+
+                .stars{
+                    color: $clr-primary-400;
+                }
+            }
+
+
+        }
+    }
+}

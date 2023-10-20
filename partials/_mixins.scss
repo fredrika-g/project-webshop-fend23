@@ -2,8 +2,25 @@
 @mixin devices ($breakpoint) { 
  
   @if $breakpoint == desktop {
-    @media (min-width: 40rem) {
+    @media (min-width: 42rem) {
       @content;
     }
   }
+}
+//3d effect shadow-background
+@mixin thirdD-effect {
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
+}
+//most use flex combo
+@mixin center{
+      justify-content: center;
+       align-items: center;
+}
+@mixin spaceAround{
+  justify-content: space-around;
+  align-items: center;
+}
+//standard boarder used
+@mixin border{
+  border: solid #000 2px;
 }

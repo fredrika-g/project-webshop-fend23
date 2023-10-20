@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,8 @@
                 <li><a href="products.html">Produkter</a></li>
                 <li><a href="references.html">Referenser</a></li>
                 <li><a href="about.html">Om oss</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
+                <li><a class="current" href="contact.html">Kontakt</a></li>
+
             </ul>
         </nav>
         
@@ -27,37 +28,72 @@
 
     <main>
         <div class="container">
-            <div class="wraps">
+            <div class="wraps flex">
             <section class="contact-cont flex">
                 <div class="contact-box flex">
-                    
+                    <div class="rub flex">
                     <h1>Kontakta oss</h1>
+                    </div>
                     
                     
                         
-                    <form id="form" name="form" method="post" action="mailto:angelo.collocolo@yh.nackademin.se">
+                    <form class="flex" id="form" name="form" method="post" action="mailto:angelo.collocolo@yh.nackademin.se" enctype="text/plain">
+
+                        Anledning till kontakt 
+
+                        <select name="problem" id="problem">
+                            <option selected disabled hidden>Välj ett alternativ</option>
+                            <option value="Reklamation">Reklamation</option>
+                            <option value="Få hjälp med att köpa">Hjälp att lägga order</option>
+                            <option value="betalnings problem">Betalningsproblem</option>
+                            <option value="Synpunkter">Synpunkter</option>
+                            <option value="Frågor om företaget">Frågor om företaget</option>
+                            <option value="collab">Collab</option>
+                            <option value="övrigt">Övrigt</option>
+                        </select>
+                        <br>
+                        
 
                         Förnamn:<br>
-                        <input type="text" name="fnamn" id="fnamn" /> <br>
+                        
+                        <input type="text" name="förnamn"> <br>
                         
                         Efternamn:<br>
-                        <input type="text" name="enamn" id="enamn" /> <br>
+                        <input type="text" name="efternamn" > <br>
                         
                         E-postadress:<br>
-                        <input type="text" name="epost" id="epost" /> <br>
+                        <input type="text" name="epost"> <br>
                         
                         Meddelande:<br>
                         <textarea name="meddelande" id="meddelande" cols="45" rows="5"></textarea> <br>
                         
-                        <input type="submit" name="skicka" id="skicka" value="Skicka meddelandet" />
+                        <input class="btn" type="submit" id="skicka" value="Skicka Meddelandet" >
                         
                         </form>
                     
                 </div>
             </section>
             <section class="contact-cont flex">
-                <div class="contact-box flex"></div>
+                <div class="contact-box flex">
+                    <div class="rub flex">
+
+                        <h2>Kontaktinformation</h2>
+                    </div>
+                    
+                    <ul>
+                        <li>Tel kontor: 08-21 34 55</li>
+                        <li>Tel CEO: 073-44-33-22</li>
+                        <li>Email: kundsupport@PureClean.se</li>
+                        <li>Adress: Fräshagatan 108</li>
+                        
+                    </ul>
+                    <div class="img-cont">
+                        <img src="https://celiahomes.se/wp-content/uploads/2020/09/b-15.jpg" alt="Bild på ett fint hus som ska föreställa purecleans kontor">
+                    </div>
+                    
+                </div>
             </section>
+            
             </div>
         </div>
     </main>
@@ -66,7 +102,7 @@
 
         <div class="flex wrapper">
             <nav class="footer-nav flex">
-                <p>PureClean</p>
+                <p class="company-name">PureClean</p>
                 <ul class="flex">
                     <li><a href="index.html">Hem</a></li>
                     <li><a href="products.html">Produkter</a></li>
