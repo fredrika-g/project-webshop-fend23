@@ -150,7 +150,7 @@ header .navigation {
 }
 .main-wrapper .main-intro h1 {
   margin-block: 2rem;
-  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  font-size: clamp(1.125rem, 6vw, 3.5rem);
   color: hsl(272, 43%, 30%);
 }
 .main-wrapper .main-intro .wrapper {
@@ -176,18 +176,19 @@ header .navigation {
 }
 .main-wrapper .main-intro .wrapper .slogan p::before {
   content: open-quote;
-  font-size: 5rem;
+  font-size: 3rem;
   color: hsl(272, 43%, 55%);
 }
 .main-wrapper .main-intro .wrapper .slogan p::after {
   content: close-quote;
-  font-size: 5rem;
+  font-size: 3rem;
   color: hsl(272, 43%, 55%);
 }
 .main-wrapper .main-intro .wrapper article {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding: 0.5rem;
 }
 .main-wrapper .main-intro .wrapper article p {
   max-width: 50ch;
