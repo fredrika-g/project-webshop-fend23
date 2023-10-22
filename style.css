@@ -307,7 +307,8 @@ footer .copyright {
   align-items: center;
   flex-direction: column;
   padding-block: 4rem;
-  gap: 2rem;
+  padding-inline: 2rem;
+  gap: 3rem;
 }
 .wrapper-about .slogan {
   font-size: clamp(1.5rem, 8vw, 2.25rem);
@@ -325,23 +326,23 @@ footer .copyright {
 }
 .wrapper-about .history .history-cont {
   margin: 1rem;
+  flex-direction: column;
+  gap: 1rem;
 }
 .wrapper-about .history .history-cont p {
-  text-align: center;
-  font-family: "PT Sans", sans-serif;
-  font-size: 1.125rem;
   max-width: 60ch;
 }
 .wrapper-about .staff {
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 .wrapper-about .staff .employee-box {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 @media (min-width: 42rem) {
   .wrapper-about .staff .employee-box {
@@ -352,6 +353,7 @@ footer .copyright {
   border-radius: 50%;
   border-style: none;
   max-width: 10rem;
+  border: 1px solid hsl(272, 43%, 55%);
 }
 .wrapper-about .staff .employee-box .role-info {
   flex-direction: column;
@@ -372,7 +374,7 @@ footer .copyright {
   font-family: Nunito, sans-serif;
 }
 .wrapper-about .staff .employee-box .role-info .role-about {
-  max-width: 45ch;
+  max-width: 60ch;
   padding-top: 1rem;
 }
 
