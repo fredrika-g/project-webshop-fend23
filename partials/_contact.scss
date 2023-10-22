@@ -21,6 +21,7 @@
         @include spaceAround;
         flex-direction: column;
         background: $clr-primary-100;
+        background: linear-gradient($clr-neutral-100, $clr-primary-100);
         @include thirdD-effect;
         font-family: $font-body;
 
@@ -35,6 +36,7 @@
                 font-family: $font-heading; 
                 margin-top: 1rem;
                 margin-bottom: 1rem;
+                
             }
         }
         ul{
@@ -45,6 +47,7 @@
                 margin-bottom: 1.5rem;
                 margin-top: 1rem;
                 text-decoration: underline;
+                
             }
         }
         .img-cont{
@@ -56,7 +59,7 @@
                 object-fit: fill;
                 @include border;
                 
-                &:hover{
+                &:active{
                     transition: ease 2s;
                     scale: 0.6;
                     position: absolute;
@@ -73,19 +76,28 @@
             flex-direction: column;
             font-family: $font-body;
 
+            
+            
+
             input{
                 margin-bottom: 1.5rem;
                 @include border;
             }
+            #Förnamn, #Efternamn, #E-postadress{
+                @include thirdD-effect;
+
+            }
             select{
                 margin-bottom: 1.5rem;
                 @include border;
+                @include thirdD-effect;
                 
             }
             
             #meddelande{
                 width: 90%;
                 @include border;
+                @include thirdD-effect
                 
             }
             #skicka{
