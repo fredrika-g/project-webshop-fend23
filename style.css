@@ -311,7 +311,10 @@ footer .copyright {
   gap: 3rem;
 }
 .wrapper-about .slogan {
-  font-size: clamp(1.25rem, 5vw, 2.25rem);
+  font-size: clamp(1.25rem, 5vw, 1.75rem);
+}
+.wrapper-about .heading {
+  color: hsl(272, 43%, 45%);
 }
 .wrapper-about .history {
   width: 100%;
@@ -330,7 +333,7 @@ footer .copyright {
   gap: 1rem;
 }
 .wrapper-about .history .history-cont p {
-  max-width: 60ch;
+  max-width: 70ch;
 }
 .wrapper-about .staff {
   flex-direction: column;
