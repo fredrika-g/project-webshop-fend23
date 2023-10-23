@@ -10,9 +10,13 @@
     gap: 3rem;
 
     .slogan{
-        font-size: clamp(1.25rem, 5vw, $fs-400);
-
+        font-size: clamp(1.25rem, 5vw, $fs-300);
     }
+
+    .heading{
+        color: $clr-primary-400;
+    }
+
     .history{
         width: 100%;
         flex-direction: column;
@@ -29,7 +33,7 @@
             gap: 1rem;
     
             p{
-                max-width: 60ch;
+                max-width: 70ch;
             }
         }
     }
