@@ -108,6 +108,7 @@
             #meddelande{
                 width: 90%;
                 border-radius: 4px;
+                resize: none;
                 @include border;
                 @include thirdD-effect
                 

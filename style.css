@@ -488,6 +488,7 @@ footer .copyright {
 .wraps .contact-cont .contact-box form #meddelande {
   width: 90%;
   border-radius: 4px;
+  resize: none;
   border: solid #000 2px;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
