@@ -18,7 +18,8 @@
         height: 90%;
         border-radius: 1rem;
         @include border;
-        @include spaceAround;
+        justify-content: space-between;
+        align-items: center;
         flex-direction: column;
         background: linear-gradient($clr-neutral-100, $clr-primary-100);
         @include thirdD-effect;
@@ -80,21 +81,33 @@
 
             input{
                 margin-bottom: 1.5rem;
+                border-radius: 4px;
                 @include border;
+                @include devices(desktop){
+                    width: 15rem;
+
+                }
             }
             #Förnamn, #Efternamn, #E-postadress{
                 @include thirdD-effect;
-
+                
             }
             select{
                 margin-bottom: 1.5rem;
+                border-radius: 4px;
                 @include border;
                 @include thirdD-effect;
+                @include devices(desktop){
+                    width: 15rem;
+                    
+    
+                }
                 
             }
             
             #meddelande{
                 width: 90%;
+                border-radius: 4px;
                 @include border;
                 @include thirdD-effect
                 

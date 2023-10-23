@@ -405,7 +405,7 @@ footer .copyright {
   height: 90%;
   border-radius: 1rem;
   border: solid #000 2px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   background: linear-gradient(hsl(0, 0%, 100%), hsl(313, 82%, 96%));
@@ -461,18 +461,31 @@ footer .copyright {
 }
 .wraps .contact-cont .contact-box form input {
   margin-bottom: 1.5rem;
+  border-radius: 4px;
   border: solid #000 2px;
+}
+@media (min-width: 42rem) {
+  .wraps .contact-cont .contact-box form input {
+    width: 15rem;
+  }
 }
 .wraps .contact-cont .contact-box form #Förnamn, .wraps .contact-cont .contact-box form #Efternamn, .wraps .contact-cont .contact-box form #E-postadress {
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
 .wraps .contact-cont .contact-box form select {
   margin-bottom: 1.5rem;
+  border-radius: 4px;
   border: solid #000 2px;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
+@media (min-width: 42rem) {
+  .wraps .contact-cont .contact-box form select {
+    width: 15rem;
+  }
+}
 .wraps .contact-cont .contact-box form #meddelande {
   width: 90%;
+  border-radius: 4px;
   border: solid #000 2px;
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.4);
 }
