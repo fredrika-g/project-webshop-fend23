@@ -301,6 +301,7 @@ footer .footer-nav ul a:hover, footer .footer-nav ul a:focus-visible {
 }
 footer .copyright {
   font-size: 0.75rem;
+  padding: 0.5rem;
 }
 
 .wrapper-about {
@@ -339,6 +340,7 @@ footer .copyright {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding-top: 2rem;
 }
 .wrapper-about .staff .employee-box {
   flex-direction: column;
