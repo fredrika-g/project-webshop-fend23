@@ -95,6 +95,17 @@
         gap: 2rem;
         padding: 2rem;
         background-color: $clr-primary-150;
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 100vw;
+            position: absolute;
+            background-color: inherit;
+            inset: 0;
+            left: calc(50% - 50vw);
+            z-index: -10;
+        }
 
         @include devices(desktop){
             flex-direction: row;
